@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+f<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -13,9 +13,8 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             text-align: center;
         }
-        /* Üst Bölüm (Hero Section) */
         .header-section {
-            padding: 100px 20px;
+            padding: 80px 20px;
             background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%);
             border-bottom: 3px solid #ff4500;
         }
@@ -55,8 +54,17 @@
             box-shadow: 0 15px 30px rgba(255, 69, 0, 0.5);
             background-color: #ff5722;
         }
-
-        /* Alt Bölüm (İçerik) */
+        /* SHA-256 Bölümü */
+        .hash-box {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #666;
+            font-family: monospace;
+            background: #1a1a1a;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+        }
         .content-section {
             max-width: 800px;
             margin: 60px auto;
@@ -68,11 +76,6 @@
             border-left: 5px solid #ff4500;
             padding-left: 15px;
             font-size: 2em;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #ccc;
         }
         .creators {
             background: #1a1a1a;
@@ -92,28 +95,29 @@
     <div class="header-section">
         <h1>Parkour A Go <span class="beta-tag">BETA</span></h1>
         <div class="download-container">
-            <a href="ParkourAGo.zip" class="btn">HEMEN İNDİR VE OYNA</a>
+            <a href="sha256:92b7e534ef4522e9eb5f43948d23fbae2409f29e9006a3b02a3c788a60fa5313" class="btn">HEMEN İNDİR VE OYNA</a>
+            <br><br>
+            <div class="hash-box">
+                SHA-256: 92b7e534ef4522e9eb5f43948d23fbae2409f29e9006a3b02a3c788a60fa5313
+            </div>
         </div>
     </div>
 
     <div class="content-section">
         <h2>Oyun Hakkında</h2>
         <p>
-            Parkour A Go, hızın ve dikkatin hayati önem taşıdığı, lavlarla dolu bir dünyada geçen 
-            heyecan verici bir parkur deneyimidir. Her adımında yükselen lavlardan kaçmalı, 
-            zorlu engelleri aşmalı ve checkpoint noktalarına ulaşarak hayatta kalmalısın. 
-            Zirveye giden bu yolda sadece en hızlılar başarılı olabilir!
+            Lavdan kaç, engelleri aş ve hayatta kal! Parkour A Go, adrenalin dolu bir 3D parkur deneyimi sunuyor.
         </p>
 
         <div class="creators">
             <h2>Geliştiriciler</h2>
             <p class="creator-name">Alper</p>
-            <p>Oyun Tasarımı, Programlama ve Seviye Tasarımı</p>
+            <p>Oyun Tasarımı & Programlama</p>
         </div>
     </div>
 
-    <footer style="margin-bottom: 50px; color: #555;">
-        &copy; 2026 Parkour A Go. Tüm hakları saklıdır.
+    <footer style="margin: 50px 0; color: #555;">
+        &copy; 2026 Parkour A Go.
     </footer>
 
 </body>
